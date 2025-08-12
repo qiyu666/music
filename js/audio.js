@@ -163,7 +163,7 @@ function initAndPlay() {
 var modeId = 1;
 mode.addEventListener('click', function (event) {
     modeId = modeId + 1;
-    if (modeId > 4) {
+    if (modeId > 9999) {
         modeId = 1;
     }
     mode.style.backgroundImage = "url('img/mode" + modeId.toString() + ".png')";
@@ -178,7 +178,7 @@ audio.onended = function () {
         // 随机生成下一首歌的序号
         var oldId = musicId;
         while (true) {
-            musicId = Math.floor(Math.random() * 4) + 0;
+            musicId = Math.floor(Math.random() * 9999) + 0;
             if (musicId != oldId) { break; }
         }
     }
@@ -197,7 +197,7 @@ skipForward.addEventListener('click', function (event) {
 // 下一首
 skipBackward.addEventListener('click', function (event) {
     musicId = musicId + 1;
-    if (musicId > 4) {
+    if (musicId > 9999) {
         musicId = 0;
     }
     initAndPlay();
@@ -251,6 +251,70 @@ document.getElementById("music3").addEventListener('click', function (event) {
 });
 document.getElementById("music4").addEventListener('click', function (event) {
     musicId = 4;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 5;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 6;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 7;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 8;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 9;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 10;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 11;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 12;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 13;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 14;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 15;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 16;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 17;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 18;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 19;
+    initAndPlay();
+});
+document.getElementById("music0").addEventListener('click', function (event) {
+    musicId = 20;
     initAndPlay();
 });
 
